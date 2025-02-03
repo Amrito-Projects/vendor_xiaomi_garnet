@@ -8,6 +8,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
     vendor/xiaomi/garnet/proprietary/odm/etc/camera/camerascene.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerascene.json \
+    vendor/xiaomi/garnet/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
+    vendor/xiaomi/garnet/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/xiaomi/garnet/proprietary/odm/etc/me_config.xml:$(TARGET_COPY_OUT_ODM)/etc/me_config.xml \
     vendor/xiaomi/garnet/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/garnet/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
@@ -1985,7 +1987,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-V1-ndk \
     fingerprint.fpc_fod.default \
     fingerprint.goodix_fod.default \
+    libdapparamstorage_v3_6 \
+    libdeccfg_v3_6 \
+    libdlbdsservice_v3_6 \
     libgf_hal \
+    libqtigef_odm \
+    libhwdap_v3_6 \
+    libswdap_v3_6 \
+    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
+    vendor.dolby_v3_6.hardware.dms360@2.0 \
+    libstagefright_soft_ddpdec \
     librfs_warp \
     CACertService \
     CneApp \
@@ -2050,6 +2061,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
     vendor.qti.memory.pasrmanager@1.0-service.xml \
     vendor.xiaomi.hardware.quickcamera@1.0-service.xml \
+    manifest_dax_dolby_v3_6.xml \
     ATFWD-daemon \
     SoterProvisioningTool \
     adpl \
@@ -2185,7 +2197,8 @@ PRODUCT_PACKAGES += \
     xtwifi-inet-agent \
     qccsyshal@1.2-service \
     wfdservice \
-    wfdservice64
+    wfdservice64 \
+    vendor.dolby_v3_6.hardware.dms360@2.0-service
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
