@@ -875,6 +875,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/firmware/gmu_gen70000.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70000.bin \
     vendor/xiaomi/garnet/proprietary/vendor/firmware/goodix_cfg_group_CSOT.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_CSOT.bin \
     vendor/xiaomi/garnet/proprietary/vendor/firmware/goodix_firmware_CSOT.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware_CSOT.bin \
+    vendor/xiaomi/garnet/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_GVO.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_GVO.bin \
+    vendor/xiaomi/garnet/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_TianMa.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_TianMa.bin \
+    vendor/xiaomi/garnet/proprietary/recovery/root/vendor/firmware/goodix_cfg_group_CSOT.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/goodix_cfg_group_CSOT.bin \
+    vendor/xiaomi/garnet/proprietary/recovery/root/vendor/firmware/goodix_firmware_CSOT.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/goodix_firmware_CSOT.bin \
     vendor/xiaomi/garnet/proprietary/vendor/firmware/goodix_test_limits_255_CSOT.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_test_limits_255_CSOT.csv \
     vendor/xiaomi/garnet/proprietary/vendor/firmware/vpu20_1v.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.b00 \
     vendor/xiaomi/garnet/proprietary/vendor/firmware/vpu20_1v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.b01 \
